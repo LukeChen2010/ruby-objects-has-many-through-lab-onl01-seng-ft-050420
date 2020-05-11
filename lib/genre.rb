@@ -17,13 +17,13 @@ class Genre
   end
   
   def artists
-    artist_genres = []
+    genre_artists = []
     
     songs.each do |x|
-      artist_genres << x.genre
+      genre_artists << x.artist
     end
     
-    return artist_genres
+    return genre_artists
   end
 
 end
