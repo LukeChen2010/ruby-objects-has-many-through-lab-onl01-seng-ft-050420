@@ -11,4 +11,7 @@ class Patient
   def self.all
     return @@all
   end
+  
+  def appointments
+  end
 end
