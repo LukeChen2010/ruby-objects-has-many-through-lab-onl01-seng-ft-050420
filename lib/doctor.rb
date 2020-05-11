@@ -21,6 +21,10 @@ class Doctor
   end
   
   def patients
+    doctor_patients = []
     
+    appointments.each do |x|
+      doctor_patients << x.patient
+    end
   end
 end
