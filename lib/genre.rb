@@ -8,6 +8,10 @@ class Genre
     @@all << self
   end
   
+  def self.all
+    return @@all
+  end
+  
   def songs
     return Song.all.select {|x| x.genre == self}
   end
