@@ -26,5 +26,7 @@ class Doctor
     appointments.each do |x|
       doctor_patients << x.patient
     end
+    
+    return doctor_patients
   end
 end
