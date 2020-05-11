@@ -9,7 +9,7 @@ def Genre
   end
   
   def songs
-    return Song.all.select {|x| x.genre == self}
+    #return Song.all.select {|x| x.genre == self}
   end
   
   def artists
