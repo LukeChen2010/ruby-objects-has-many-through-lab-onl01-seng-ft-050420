@@ -19,4 +19,14 @@ class Patient
   def appointments
     return Appointment.all.select {|x| x.patient == self}
   end
+  
+  def doctors
+    patient_doctors = []
+    
+    appointments.each do |x|
+      patient_doctors << x.doctor
+    end
+    
+    return patient_doctors
+  end
 end
