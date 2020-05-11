@@ -7,5 +7,8 @@ def Genre
     @name = name
     @@all << self
   end
+  
+  def songs
+  end
 
 end
