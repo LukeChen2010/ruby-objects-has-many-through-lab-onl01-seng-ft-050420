@@ -24,7 +24,7 @@ class Artist
     artist_genres = []
     
     songs.each do |x|
-      artist_genres << x
+      artist_genres << x.genre
     end
     
     return artist_genres
